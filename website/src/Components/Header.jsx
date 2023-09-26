@@ -1,27 +1,74 @@
-import "./hm.css";
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faUser, faCircle, faHeart } from '@fortawesome/react-fontawesome';
-// import { faBagShopping, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+import "./header.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser, faCircle, faHeart } from '@fortawesome/free-regular-svg-icons';
+import { faBagShopping, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+import { useNavigate } from 'react-router-dom';
 
 function Header() {
+
+    const locate = useNavigate()
+
+    function mens() {
+        locate('./Mens')
+    }
+    function home() {
+        locate('/')
+    }
     return (
-        <div id="screen">
-            <div id="navbar">
-                <div id="nav-1">
-                    <div id="nav-1-left">
-                        <span>Customer Service</span>
-                        <span>Newsletter</span>
-                        <span>Find a store</span>
-                        <span>000</span>
+        <div className="header">
+
+            <div className="header-top">
+                <div className="head-l">
+                    <div className="h-left">Customer Service</div>
+                    <div className="h-left">NewsLetter</div>
+                    <div className="h-left">Find a Store</div>
+                    <div className="h-left">
+                        <FontAwesomeIcon icon={faCircle} className="circle" />
+                        <FontAwesomeIcon icon={faCircle} className="circle" />
+                        <FontAwesomeIcon icon={faCircle} className="circle" />
                     </div>
-                    <div>
-                    right
                 </div>
+
+                <div className="hnm-image">
+                    <img onClick={home} src="https://www.hm.com/entrance/assets/bundle/img/HM-Share-Image.jpg" alt="" />
                 </div>
-                
+
+                <div className="head-r">
+                    <div><FontAwesomeIcon icon={faUser} className="user" />
+                        <span>Signin</span>
+                    </div>
+                    <div><FontAwesomeIcon icon={faHeart} className="favourite" />
+                        <span>Favourites</span>
+                    </div>
+                    <div><FontAwesomeIcon icon={faBagShopping} className="cart" />
+                        <span>Shopping Bag</span>
+                    </div>
+                </div>
             </div>
+
+            <div className="head-bottom">
+                <div className="filter">
+                    <ul>
+                        <li>Ladies</li>
+                        <li onClick={mens}>Men</li>
+                        <li>Divided</li>
+                        <li>Baby</li>
+                        <li>Kids</li>
+                        <li>H&M HOME</li>
+                        <li>Sport</li>
+                        <li>Sustainablilty</li>
+                        <li>Sale</li>
+                    </ul>
+                </div>
+
+                <div className="f-right">
+                    <div><FontAwesomeIcon icon={faMagnifyingGlass} className="search" /></div>
+                    <input type="text" placeholder="Search Products" />
+                </div>
+            </div>
+
         </div>
     )
 }
 
-export default Header;
+export default Header

@@ -1,16 +1,13 @@
-import { useNavigate } from "react-router-dom";
-import Header from "./Header";
-import Footer from "./Footer";
+import "./homepage.css"
+import Header from "./Header"
+import Footer from "./Footer"
 
-function Homepage () {
-    // const router = useNavigate()
-
+function Homepage() {
     return (
         <div>
             <Header />
-            <div id="home-head">
-                <div>left</div>
-                <div>right</div>
+            <div>
+                homepage
             </div>
             <Footer />
         </div>

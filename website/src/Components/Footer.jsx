@@ -1,32 +1,75 @@
-import React from "react";
-import "./footer.css";
-import LeftMenu from "./LeftMenu"
+import "./footer.css"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import { faFacebook, faTwitter, faInstagram, faYoutube, faPinterest } from '@fortawesome/free-brands-svg-icons'
 
 function Footer() {
-
-    const headings = ['SHOP', 'CORPORATE INFO', 'HELP'];
-
-    const options = [
-        ['Ladies', 'Men', 'Baby', 'Kids', 'H&M HOME', 'Sport'],
-        ['Career at H&M', 'About H&M group', 'Sustainability H&M Group', 'Press', 'Investor relations', 'Corporate governance'],
-        ['Customer service', 'My H&M', 'Find a store', 'Legal & Privacy', 'Contact', 'Report a scam', 'Cookie Notice', 'Cookie settings']
-    ];
-
     return (
         <div className="footer">
-            <div className='footer-lists'>
-                {headings.map((heading, i) => <LeftMenu heading={heading} options={options[i]} customClass={'footerLists'} />)}
-                <div className='news-letter-signup'>
-                    <h4>Sign up for newsletter</h4>
-                    <p>Sign up now and be the first to know about exclusive offers, latest fashion news & style tips!</p>
-                    <h4>READ MORE </h4>
+
+            <div className="f-content">
+                <div className="f-c">
+                    <div>SHOP</div>
+                    <div>Ladies</div>
+                    <div>Men</div>
+                    <div>Baby</div>
+                    <div>Kids</div>
+                    <div>H&M HOME</div>
+                    <div>Sport</div>
                 </div>
+
+                <div className="f-c">
+                    <div>CORPORATE INFO</div>
+                    <div>Career at H&M</div>
+                    <div>About H&M group</div>
+                    <div>Sustainability H&M Group</div>
+                    <div>Press</div>
+                    <div>Investor relations</div>
+                    <div>Corporate governance</div>
+                </div>
+
+                <div className="f-c">
+                    <div>HELP</div>
+                    <div>Customer Service</div>
+                    <div>My H&M</div>
+                    <div>Find a store</div>
+                    <div>Legal & Privacy</div>
+                    <div>Contact</div>
+                    <div>Report a scam</div>
+                    <div>Cookie Notice</div>
+                    <div>Cookie Settings</div>
+                </div>
+
+                <div className="f-c ">
+                    <div>
+                        <p>Sign up now and be the first to know about exclusive offers, latest fashion news & style tips!</p>
+                    </div>
+                    <div className="r-more">
+                        <div>Read More</div>
+                        <FontAwesomeIcon icon={faArrowRight} className="arrow" />
+                    </div>
+                </div>
+
             </div>
-            {/* <div className='social-media'>
-        <FontAwesomeIcon icon={faSquareFacebook} style={{color: "#222222",}} />
-        </div> */}
+
+            <div className="f-icons">
+                <FontAwesomeIcon icon={faFacebook} className="font-icons" />
+                <FontAwesomeIcon icon={faTwitter} className="font-icons" />
+                <FontAwesomeIcon icon={faInstagram} className="font-icons" />
+                <FontAwesomeIcon icon={faYoutube} className="font-icons" />
+                <FontAwesomeIcon icon={faPinterest} className="font-icons" />
+            </div>
+
+            <div className="copyright">
+                <p>The content of this site is copyright-protected and is the property of H & M Hennes & Mauritz AB.</p>
+            </div>
+
+            <div className="foot-last">
+                <p>INDIA | Rs.</p>
+            </div>
+            
         </div>
     )
 }
 
-export default Footer;
+export default Footer

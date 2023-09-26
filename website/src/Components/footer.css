@@ -1,44 +1,96 @@
-.footer{
-    height: 625px;
-    background-color: rgb(228,228,228);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.footer-lists{
+.footer {
+    width: 100%;
+    height: 70vh;
+    /* border: 1px solid green; */
+    max-width: 1250px;
+    margin: auto;
+    background-color: #e4e4e4;
+}
+
+.f-content {
+    width: 62%;
+    height: 67%;
+    /* border: 1px solid red; */
+    padding-top: 10px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    margin: auto;
+    /* padding-top: 50px; */
 }
 
-.news-letter-signup{
-    width: 20%;
-    margin-top: 5%;
-}
-
-.news-letter-signup > h4{
-    font-size: 0.8em;
-    font-weight: 600;
-    text-align: left;
-    margin-left: 20%;
-}
-
-.news-letter-signup > p{
-    margin-top: 7%;
-    font-size: 0.75em;
-    font-weight: 500;
-    width: 80%;
-    text-align: left;
-    margin-left: auto;
-}
-
-.footerLists{
-    margin-top: 4%;
+.f-c {
     width: 15%;
+    height: 100%;
+    /* border: 1px solid black; */
+    /* display: flex; */
 }
 
-.footerLists > h4{
-    font-weight: 700;
-    font-size: 0.75em;
+.f-c div {
+    font-size: 4px;
+    font-weight: 500;
+    margin-top: 8px;
+    text-align: left;
+    line-height: 3px;
 }
 
-.footerLists > p{
-    margin-top: 1.5em;
+.f-c div:nth-child(1) {
+    font-size: 6px;
+    font-weight: 500;
+    line-height: 5px;
+}
+
+.f-content div:nth-child(4) {
+    width: 86px;
+}
+
+.f-c p {
+    font-size: 5px;
+    margin-top: 20px;
+    line-height: 6px;
+}
+
+.r-more {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    /* border: 1px solid red; */
+}
+
+.arrow {
+    font-size: 7px;
+    margin-top: 9px;
+    margin-left: 10px;
+    /* padding-top: 20px; */
+    font-weight: normal;
+}
+
+.f-icons {
+    width: 15%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.font-icons {
+    height: 8px;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 5px;
+    margin-top: 10px;
+}
+
+.foot-last {
+    font-size: 5px;
+    margin-top: 30px;
+    text-align: center;
 }

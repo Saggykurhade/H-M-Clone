@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    height: 65px;
+    /* border: 1px solid red; */
+    width: 100%;
+}
+
+.header-top {
+    height: 70%;
+    width: 96%;
+    /* border: 1px solid blue; */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h-left {
+    font-size: 5.5px;
+    font-weight: 500;
+    /* margin-left: 5px; */
+}
+
+.head-l {
+    display: flex;
+    align-items: center;
+    color: #533237;
+    justify-content: space-between;
+    height: 100%;
+    /* border: 1px solid green; */
+    width: 23%;
+}
+
+.circle {
+    height: 3px;
+    font-weight: bolder;
+    color: #533237;
+    padding-bottom: 1px;
+    word-spacing: 2px;
+}
+
+.circle:hover {
+    color: red;
+}
+
+.hnm-image {
+    width: 70px;
+    height: 40px;
+    position: absolute;
+    left: 44%;
+    right: 50%;
+}
+
+.hnm-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.head-r {
+    width: 30%;
+    height: 20%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.head-r div {
+    /* margin-right: 5px; */
+    display: flex;
+    align-items: center;
+    /* padding-bottom: 10px; */
+}
+
+.head-r span {
+    font-size: 5.5px;
+    color: #533237;
+    margin-right: 4px;
+    font-weight: 500;
+}
+
+.user {
+    /* border: 1px solid red; */
+    height: 10px;
+    margin-right: 3px;
+}
+
+.favourite {
+    /* border: 1px solid red; */
+    height: 10px;
+    margin-right: 3px;
+}
+
+.cart {
+    /* border: 1px solid red; */
+    height: 10px;
+    margin-right: 3px;
+}
+
+.head-bottom {
+    display: flex;
+}
+
+.filter {
+    width: 50%;
+    height: 20px;
+    /* border: 1px solid red; */
+    display: flex;
+    margin-left: 150px;
+}
+
+.filter ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+}
+
+.filter ul li {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    font-size: 6px;
+}
+
+.filter ul li:nth-child(2) {
+    cursor: pointer;
+}
+
+.f-right {
+    width: 13%;
+    height: 20px;
+    font-size: 8px;
+    /* border: 1px solid brown; */
+    margin-left: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.f-right input {
+    border: none;
+    border-bottom: 1px solid #533237;
+    width: 100%;
+    font-size: 6px;
+    padding-bottom: 2.3px;
+    padding-left: 4px;
+}
+
+.search {
+    border-bottom: 1px solid #533237;
+    font-size: 10px;
+}
