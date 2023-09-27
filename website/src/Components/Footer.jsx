@@ -1,7 +1,7 @@
-import "./footer.css"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
-import { faFacebook, faTwitter, faInstagram, faYoutube, faPinterest } from '@fortawesome/free-brands-svg-icons'
+import "./footer.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { faFacebook, faTwitter, faInstagram, faYoutube, faPinterest } from '@fortawesome/free-brands-svg-icons';
 
 function Footer() {
     return (
