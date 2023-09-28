@@ -100,3 +100,22 @@
     padding-top: 7px;
     line-height: 3px
 }
+
+.mens-content {
+    width: 60%;
+    height: auto;
+    /* border: 1px solid green; */
+}
+
+.men-img {
+    height: 500px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.men-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* overflow: hidden; */
+}

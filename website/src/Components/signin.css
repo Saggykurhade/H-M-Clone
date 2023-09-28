@@ -27,18 +27,14 @@
     overflow: hidden;
 }
 
-
-
 .Inactive+.pop {
     /* transform: scale(0); */
     /* visibility: hidden; */
     display: none;
-
 }
 
 .pop {
     padding: 0% 25%;
-
 }
 
 .pop-content {
@@ -52,11 +48,21 @@
     position: absolute;
     top: 10%;
     left: 25%;
-
-    /* transform: translate(50%,50%); */
     z-index: 10;
 }
 
+.end {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.signIn-heading {
+    text-align: center;
+    font-size: 14px;
+    width: 90%;
+    margin: auto;
+}
 
 #Email-label,
 #Pass-label {
@@ -69,7 +75,6 @@
     min-width: 450px;
     height: 40px;
     margin-left: 20px;
-
 }
 
 .rememberMe {
@@ -84,12 +89,6 @@
 .rememberMe>input {
     width: 20px;
     height: 20px;
-}
-
-.end {
-    position: absolute;
-    top: 5px;
-    right: 5px;
 }
 
 .submit {
@@ -123,110 +122,8 @@
     margin-top: 15px;
 }
 
-.signIn-heading {
-    text-align: center;
-    font-size: 14px;
-    width: 90%;
-    margin: auto;
-}
-
 .pop-box {
     width: 100%;
     height: 100%;
     background-color: black;
-}
-
-#home-content {
-    background-color: rgb(250, 249, 248);
-    width: 100%;
-}
-
-#info-container {
-    width: 80%;
-    margin: auto;
-    height: 80px;
-    /* border: 1px solid red; */
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 13px;
-
-}
-
-.woman-img {
-    width: 60%;
-    height: 500px;
-    margin: 20px auto;
-    overflow: hidden;
-}
-
-.woman-img img {
-    width: 100%;
-    height: 100%;
-    /* aspect-ratio: 2/1; */
-    object-fit: cover;
-    overflow: hidden;
-}
-
-.man-img {
-    width: 60%;
-    height: 500px;
-    /* aspect-ratio: 2/1; */
-    margin: 20px auto;
-    overflow: hidden;
-}
-
-.man-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    overflow: hidden;
-}
-
-#homescreen {
-    width: 100%;
-}
-
-#mens-container {
-    display: flex;
-    width: 100%;
-}
-
-.sort-left {
-    width: 20%;
-    /* height: 600px; */
-    height: auto;
-    /* border: 1px solid red; */
-}
-
-.mens-content {
-    width: 60%;
-    height: auto;
-    /* border: 1px solid green; */
-}
-
-.sort-section {
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-bottom: 20px;
-}
-
-.sort-section div {
-    /* font-weight: normal; */
-    font-size: 13px;
-    margin-bottom: 5px;
-    margin-top: 5px;
-}
-
-.men-img img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    /* overflow: hidden; */
-}
-
-.men-img {
-    height: 500px;
-    overflow: hidden;
-    margin-bottom: 20px;
 }

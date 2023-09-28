@@ -1,8 +1,8 @@
 import "./header.css";
+import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faCircle, faHeart } from '@fortawesome/free-regular-svg-icons';
 import { faBagShopping, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
-import { useNavigate } from 'react-router-dom';
 import Signin from "./Signin";
 
 function Header() {
@@ -32,12 +32,12 @@ function Header() {
                 </div>
 
                 <div className="hnm-image">
-                    <img onClick={home} src="https://www.hm.com/entrance/assets/bundle/img/HM-Share-Image.jpg" alt="" />
+                    <img onClick={home} src="./Images/logo.png" alt="" />
                 </div>
 
                 <div className="head-r">
-                    <div><FontAwesomeIcon icon={faUser} className="user" />
-                        <span><Signin /></span>
+                    <div><FontAwesomeIcon icon={faUser} className="user" onClick={Signin}/>
+                        <span onClick={Signin}>Signin</span>
                     </div>
                     <div><FontAwesomeIcon icon={faHeart} className="favourite" />
                         <span>Favourites</span>
