@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
-import './signin.css'
+import './hm.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faX } from '@fortawesome/free-solid-svg-icons'
-
-
 
 function Signin() {
     const [isSigninActive, setButton] = useState(false)
@@ -16,6 +14,7 @@ function Signin() {
     function Submit() {
         alert('done')
     }
+
     return (
         <div>
             <button className={buttonClass} id='Signin' onClick={handleButton}>Signin</button>
@@ -48,4 +47,4 @@ function Signin() {
     )
 }
 
-export default Signin;
+export default Signin

@@ -1,4 +1,4 @@
-import "./header.css";
+import "./hm.css";
 import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faCircle, faHeart } from '@fortawesome/free-regular-svg-icons';
@@ -36,7 +36,7 @@ function Header() {
                 </div>
 
                 <div className="head-r">
-                    <div><FontAwesomeIcon icon={faUser} className="user" onClick={Signin}/>
+                    <div><FontAwesomeIcon icon={faUser} className="user" onClick={Signin} />
                         <span onClick={Signin}>Signin</span>
                     </div>
                     <div><FontAwesomeIcon icon={faHeart} className="favourite" />

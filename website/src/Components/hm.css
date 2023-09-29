@@ -1,0 +1,519 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* header css */
+.header {
+    width: 100%;
+    height: 65px;
+    /* border: 1px solid red; */
+    background-color: rgb(250, 249, 248);
+    overflow: hidden;
+}
+
+.header-top {
+    width: 96%;
+    height: 70%;
+    /* border: 1px solid blue; */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h-left {
+    font-size: 5.5px;
+    font-weight: 500;
+}
+
+.head-l {
+    width: 23%;
+    height: 100%;
+    color: #533237;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid green; */
+}
+
+.circle {
+    height: 3px;
+    font-weight: bolder;
+    color: #533237;
+    padding-bottom: 1px;
+    word-spacing: 2px;
+}
+
+.circle:hover {
+    color: red;
+}
+
+.hnm-image {
+    width: 40px;
+    height: 20px;
+    position: absolute;
+    left: 46%;
+    right: 50%;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.hnm-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.head-r {
+    width: 30%;
+    height: 22%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.head-r div {
+    /* margin-right: 15px; */
+    display: flex;
+    align-items: center;
+    /* padding-bottom: 10px; */
+}
+
+.head-r span {
+    font-size: 5.5px;
+    color: #533237;
+    margin-right: 4px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.user {
+    /* border: 1px solid red; */
+    height: 9px;
+    margin-right: 3px;
+    cursor: pointer;
+}
+
+.favourite {
+    /* border: 1px solid red; */
+    height: 9px;
+    margin-right: 3px;
+}
+
+.cart {
+    /* border: 1px solid red; */
+    height: 9px;
+    margin-right: 3px;
+}
+
+.head-bottom {
+    display: flex;
+}
+
+.filter {
+    width: 50%;
+    height: 20px;
+    /* border: 1px solid red; */
+    display: flex;
+    margin-left: 150px;
+}
+
+.filter ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+}
+
+.filter ul li {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    font-size: 6px;
+}
+
+.filter ul li:nth-child(2) {
+    cursor: pointer;
+}
+
+.f-right {
+    width: 13%;
+    height: 20px;
+    font-size: 8px;
+    /* border: 1px solid brown; */
+    margin-left: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.f-right input {
+    border: none;
+    border-bottom: 1px solid #533237;
+    width: 100%;
+    font-size: 6px;
+    padding-bottom: 2.3px;
+    padding-left: 4px;
+    background-color: rgb(250, 249, 248);
+}
+
+.search {
+    border-bottom: 1px solid #533237;
+    font-size: 10px;
+    background-color: rgb(250, 249, 248);
+}
+
+/* footer css */
+.footer {
+    width: 100%;
+    height: 70vh;
+    /* border: 1px solid green; */
+    max-width: 1300px;
+    margin: auto;
+    background-color: #e4e4e4;
+}
+
+.f-content {
+    width: 62%;
+    height: 67%;
+    /* border: 1px solid red; */
+    padding-top: 10px;
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+}
+
+.f-c {
+    width: 15%;
+    height: 100%;
+    /* border: 1px solid black; */
+    /* display: flex; */
+}
+
+.f-c div {
+    font-size: 4px;
+    font-weight: 500;
+    margin-top: 8px;
+    text-align: left;
+    line-height: 3px;
+    overflow: hidden;
+}
+
+.f-c div:nth-child(1) {
+    font-size: 6px;
+    font-weight: 500;
+    line-height: 5px;
+}
+
+.f-content div:nth-child(4) {
+    width: 86px;
+}
+
+.f-c p {
+    font-size: 5px;
+    margin-top: 20px;
+    line-height: 6px;
+    overflow: hidden;
+}
+
+.r-more {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    /* border: 1px solid red; */
+}
+
+.arrow {
+    font-size: 7px;
+    margin-top: 9px;
+    margin-left: 10px;
+    /* padding-top: 20px; */
+    font-weight: normal;
+}
+
+.f-icons {
+    width: 15%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.font-icons {
+    height: 8px;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 5px;
+    margin-top: 10px;
+}
+
+.foot-last {
+    font-size: 5px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.Active,
+.Inactive {
+    width: 50px;
+}
+
+#Signin {
+    border: none;
+    background-color: transparent;
+}
+
+.Active+.pop {
+
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to left, rgb(0, 0, 0, 0.5) 50%, rgb(0, 0, 0, 0.5) 50%);
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    z-index: 6;
+    display: block;
+    overflow: hidden;
+}
+
+
+
+.Inactive+.pop {
+    /* transform: scale(0); */
+    /* visibility: hidden; */
+    display: none;
+
+}
+
+.pop {
+    padding: 0% 25%;
+
+}
+
+.pop-content {
+    width: 600px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    /* border: 1px solid red; */
+    background-color: white;
+    position: absolute;
+    top: 10%;
+    left: 25%;
+
+    /* transform: translate(50%,50%); */
+    z-index: 10;
+}
+
+
+#Email-label,
+#Pass-label {
+    padding-top: 20px;
+    margin-left: 20px;
+}
+
+#Email,
+#Password {
+    min-width: 450px;
+    height: 40px;
+    margin-left: 20px;
+
+}
+
+.rememberMe {
+    width: 90%;
+    text-decoration: underline;
+    margin-top: 10px;
+    justify-content: space-between;
+    font-size: 13px;
+    margin-left: 20px;
+}
+
+.rememberMe>input {
+    width: 20px;
+    height: 20px;
+}
+
+.end {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.submit {
+    width: 100%;
+    height: 40px;
+    margin-left: 30px;
+    color: rgb(250, 250, 250);
+    background-color: rgb(0, 0, 0);
+    border: none;
+    outline: none;
+    margin-top: 30px;
+}
+
+.Member {
+    width: 100%;
+    height: 40px;
+    margin-left: 30px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(252, 252, 252);
+    /* border: none; */
+    border: 1px solid black;
+    outline: none;
+    margin-top: 30px;
+}
+
+.M-info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-right: 15px;
+    margin-top: 15px;
+}
+
+.signIn-heading {
+    text-align: center;
+    font-size: 14px;
+    width: 90%;
+    margin: auto;
+}
+
+.pop-box {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+/* homepage css */
+#homescreen {
+    width: 100%;
+    background-color: rgb(250, 249, 248);
+}
+
+#home-content {
+    background-color: rgb(250, 249, 248);
+    width: 63%;
+    margin: auto;
+    margin-top: 5px;
+    /* border: 1px solid red; */
+}
+
+#info-container {
+    width: 100%;
+    margin: auto;
+    height: 20px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 5.5px;
+    font-weight: 500;
+
+}
+
+.woman-img {
+    width: 100%;
+    height: 260px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.woman-img img {
+    width: 100%;
+    height: 100%;
+    /* aspect-ratio: 2/1; */
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.man-img {
+    width: 100%;
+    height: 260px;
+    /* aspect-ratio: 2/1; */
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.man-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+/* mens css */
+#men-bg {
+    background-color: rgb(250, 249, 248);
+}
+#hm-com p:hover {
+    color: red;
+}
+
+.head {
+    text-align: center;
+    font-size: 4.5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.head span {
+    color: red;
+}
+
+#mens-container {
+    width: 100%;
+    display: flex;
+    margin-top: 5px;
+}
+
+.sort-left {
+    width: 16%;
+    height: 500px;
+    /* border: 1px solid red; */
+    text-align: left;
+    overflow: hidden;
+}
+
+.sort-section {
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.sort-section h4 {
+    font-size: 6px;
+    font-weight: 500;
+}
+
+.sort-section div {
+    /* font-weight: normal; */
+    font-size: 5px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.mens-content {
+    width: 65%;
+    height: auto;
+    /* border: 1px solid green; */
+}
+
+.men-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* overflow: hidden; */
+}
+
+.men-img {
+    height: 270px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}

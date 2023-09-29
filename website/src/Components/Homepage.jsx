@@ -1,12 +1,7 @@
-import "./homepage.css"
 import Header from "./Header"
 import Footer from "./Footer"
-import { useNavigate } from 'react-router-dom';
-
 
 function Homepage() {
-
-    const locate = useNavigate()
 
     return (
         <div id="homescreen">
@@ -20,12 +15,15 @@ function Homepage() {
                     <div>Download the H&M App</div>
                 </div>
 
-                {/* <div className="woman-img"><img src="img-1.png" alt="" /></div>
-                <div className="man-img"><img src="img-2.png" alt="" /></div> */}
+                <div className="woman-img"><img src="./Images/img-1.png" alt="" /></div>
+                <div className="man-img"><img src="./Images/img-7.png" alt="" /></div>
+                <div className="man-img"><img src="./Images/img-2.png" alt="" /></div>
+                <div className="woman-img"><img src="./Images/img-8.png" alt="" /></div>
+
             </div>
             <Footer />
         </div>
     )
 }
 
-export default Homepage;
+export default Homepage
