@@ -17,6 +17,7 @@ function Mens() {
                         <h4>Member Exclusive Prices</h4>
                         <div>Shop Now</div>
                     </div>
+
                     <div className="sort-section">
                         <h4>New Arrivals</h4>
                         <div>View All</div>
@@ -54,17 +55,20 @@ function Mens() {
                         <div>Premium Selection</div>
                         <div>Sale</div>
                     </div>
+
                     <div className="sort-section">
                         <h4>Premium Selection</h4>
                         <div>H&M Take Care</div>
                         <div>Learn More</div>
                     </div>
                 </div>
+
                 <div className="mens-content">
                     <div className="men-img"><img src="./Images/img-2.png" alt="" /></div>
                     <div className="men-img"><img src="./Images/img-3.png" alt="" /></div>
                     <div className="men-img"><img src="./Images/img-4.png" alt="" /></div>
                 </div>
+                
             </div>
             <Footer />
         </div >
